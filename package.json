@@ -13,7 +13,7 @@
   "scripts": {
     "build": "node ../../build/module-builder/bin/entry build",
     "watch": "node ../../build/module-builder/bin/entry watch",
-    "package": "node ../../build/module-builder/bin/entry package --beforeCmd 'rm -rf ./node_production_modules/asteroid/test/dist ./node_production_modules/asteroid/test/node_modules'"
+    "package": "node ../../build/module-builder/bin/entry package --beforePackage 'rm -rf ./node_production_modules/asteroid/test/dist ./node_production_modules/asteroid/test/node_modules'"
   },
   "dependencies": {
    "@rocket.chat/sdk": "^0.2.9"
