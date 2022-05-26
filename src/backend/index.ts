@@ -4,6 +4,7 @@ import { setupMiddleware, RocketChatClient } from './client'
 import { Clients } from './typings'
 
 let router
+// FIXME: 1<->N model is not good for distributed deployment
 const clients: Clients = {}
 
 // This is called when server is started, usually to set up the database
@@ -70,7 +71,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
     // The full name is used in other places, for example when displaying bot templates
     fullName: 'Rocket.Chat Module',
     // Not used anywhere, but should be a link to your website or module repository
-    homepage: 'https://www.met.it'
+    homepage: 'https://im.cescfc.tech'
   }
 }
 

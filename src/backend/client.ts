@@ -100,7 +100,7 @@ export class RocketChatClient {
 
             await self.bp.events.sendEvent(
                   self.bp.IO.Event({
-                    id: message.ts.$date.toString(),
+                    // threadId: message.ts.$date.toString(),
                     botId: self.botId,
                     channel: 'rocketchat',
                     direction: 'incoming',

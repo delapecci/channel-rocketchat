@@ -1,9 +1,9 @@
-FROM node:10
+FROM node:12
 
 ARG FOR_BRANCH=master
 RUN apt-get update && \
     apt-get install -y git && \
-    git clone https://github.com/botpress/botpress.git /bp && \
+    git clone https://mirror.ghproxy.com/https://github.com/botpress/botpress /bp && \
     rm -fR /var/lib/apt/lists
 
 WORKDIR /bp
