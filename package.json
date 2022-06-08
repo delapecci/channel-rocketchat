@@ -5,11 +5,12 @@
   "private": true,
   "main": "dist/backend/index.js",
   "repository": {
-    "url": "https://github.com/metsrl/channel-rocketchat",
+    "url": "https://github.com/delapecci/channel-rocketchat",
     "type": "git"
   },
   "author": "Michele Bollini Met srl <michele.bollini@met.it>",
   "license": "AGPL-3.0-only",
+  "contributors": [ "Chris Li <delapecci@gmail.com>" ],
   "scripts": {
     "build": "node ../../build/module-builder/bin/entry build",
     "watch": "node ../../build/module-builder/bin/entry watch",
